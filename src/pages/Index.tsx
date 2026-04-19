@@ -7,8 +7,8 @@ interface Product {
   id: number;
   name: string;
   brand: string;
-  type: "компрессорный" | "ультразвуковой" | "меш-небулайзер";
-  age: "дети" | "взрослые" | "универсальный";
+  type: "горки" | "качели" | "домики" | "комплексы";
+  age: "до 3 лет" | "3–7 лет" | "7–12 лет" | "универсальный";
   price: number;
   image: string;
   badge?: string;
@@ -18,80 +18,80 @@ interface Product {
 const PRODUCTS: Product[] = [
   {
     id: 1,
-    name: "NebuPro 3000",
-    brand: "OMRON",
-    type: "компрессорный",
-    age: "универсальный",
-    price: 3490,
-    image: "https://cdn.poehali.dev/projects/817a13ff-276b-40ef-b049-24bf274a3f4b/files/c5208ddc-07d8-431c-90e4-9f97fa69000a.jpg",
+    name: "СупергорА XL",
+    brand: "KidsPark",
+    type: "горки",
+    age: "3–7 лет",
+    price: 12900,
+    image: "https://cdn.poehali.dev/projects/817a13ff-276b-40ef-b049-24bf274a3f4b/files/abf38e83-0bd3-4b09-af5e-fec68bd9882a.jpg",
     badge: "Хит продаж",
-    description: "Мощный компрессорный небулайзер для всей семьи. Подходит для любых лекарств.",
+    description: "Яркая пластиковая горка с широким скатом и удобной лесенкой. Безопасные закруглённые края.",
   },
   {
     id: 2,
-    name: "AquaMist Lite",
-    brand: "B.Well",
-    type: "ультразвуковой",
-    age: "взрослые",
-    price: 4990,
-    image: "https://cdn.poehali.dev/projects/817a13ff-276b-40ef-b049-24bf274a3f4b/files/56d26244-c4ef-47ac-8485-093723ff7d8c.jpg",
+    name: "ДуоКачель Комфорт",
+    brand: "WoodPlay",
+    type: "качели",
+    age: "3–7 лет",
+    price: 8490,
+    image: "https://cdn.poehali.dev/projects/817a13ff-276b-40ef-b049-24bf274a3f4b/files/2ae45ff8-10fb-48e3-8392-300a4fb8a1bd.jpg",
     badge: "Новинка",
-    description: "Бесшумный ультразвуковой аппарат для домашнего использования.",
+    description: "Деревянные качели на двух подвесах из натурального дуба. Нагрузка до 100 кг на каждое сиденье.",
   },
   {
     id: 3,
-    name: "KidBreath Junior",
-    brand: "Little Doctor",
-    type: "меш-небулайзер",
-    age: "дети",
-    price: 5290,
-    image: "https://cdn.poehali.dev/projects/817a13ff-276b-40ef-b049-24bf274a3f4b/files/13ca9ff1-2ff9-42e5-ad0e-ce8992a26bb7.jpg",
-    badge: "Для детей",
-    description: "Яркий меш-небулайзер с тихой работой. Идеален для малышей от 0 лет.",
+    name: "Домик «Лесная сказка»",
+    brand: "KidsPark",
+    type: "домики",
+    age: "до 3 лет",
+    price: 15800,
+    image: "https://cdn.poehali.dev/projects/817a13ff-276b-40ef-b049-24bf274a3f4b/files/7b43bb5b-e878-4257-bb21-6796f4311e60.jpg",
+    badge: "Для малышей",
+    description: "Уютный пластиковый домик с настоящей дверцей и окошками. Идеально для сада и дачи.",
   },
   {
     id: 4,
-    name: "ComfortBreath Pro",
-    brand: "OMRON",
-    type: "компрессорный",
-    age: "взрослые",
-    price: 2890,
-    image: "https://cdn.poehali.dev/projects/817a13ff-276b-40ef-b049-24bf274a3f4b/files/c5208ddc-07d8-431c-90e4-9f97fa69000a.jpg",
-    description: "Надёжный компрессорный небулайзер для взрослых пациентов.",
+    name: "СпортКомплекс Олимп",
+    brand: "ActiveKids",
+    type: "комплексы",
+    age: "7–12 лет",
+    price: 34900,
+    image: "https://cdn.poehali.dev/projects/817a13ff-276b-40ef-b049-24bf274a3f4b/files/abf38e83-0bd3-4b09-af5e-fec68bd9882a.jpg",
+    badge: "Премиум",
+    description: "Многофункциональный игровой комплекс: горка, качели, лестница, турник и песочница.",
   },
   {
     id: 5,
-    name: "UltraSilent 500",
-    brand: "Microlife",
-    type: "ультразвуковой",
-    age: "универсальный",
-    price: 6790,
-    image: "https://cdn.poehali.dev/projects/817a13ff-276b-40ef-b049-24bf274a3f4b/files/56d26244-c4ef-47ac-8485-093723ff7d8c.jpg",
-    badge: "Премиум",
-    description: "Премиальный ультразвуковой небулайзер с LCD-дисплеем.",
+    name: "МиниГорка Baby",
+    brand: "ActiveKids",
+    type: "горки",
+    age: "до 3 лет",
+    price: 5990,
+    image: "https://cdn.poehali.dev/projects/817a13ff-276b-40ef-b049-24bf274a3f4b/files/abf38e83-0bd3-4b09-af5e-fec68bd9882a.jpg",
+    description: "Безопасная горка для самых маленьких. Мягкий скат, нескользящие ступеньки.",
   },
   {
     id: 6,
-    name: "MeshKid Mini",
-    brand: "Little Doctor",
-    type: "меш-небулайзер",
-    age: "дети",
-    price: 7490,
-    image: "https://cdn.poehali.dev/projects/817a13ff-276b-40ef-b049-24bf274a3f4b/files/13ca9ff1-2ff9-42e5-ad0e-ce8992a26bb7.jpg",
-    description: "Карманный меш-небулайзер для детей. Работает от USB.",
+    name: "КачельКресло Luxe",
+    brand: "WoodPlay",
+    type: "качели",
+    age: "универсальный",
+    price: 11200,
+    image: "https://cdn.poehali.dev/projects/817a13ff-276b-40ef-b049-24bf274a3f4b/files/2ae45ff8-10fb-48e3-8392-300a4fb8a1bd.jpg",
+    description: "Подвесное кресло-качель из ротанга для всей семьи. Подходит для улицы и веранды.",
   },
 ];
 
-const BRANDS = ["Все", "OMRON", "B.Well", "Little Doctor", "Microlife"];
-const TYPES = ["Все", "компрессорный", "ультразвуковой", "меш-небулайзер"];
-const AGES = ["Все", "дети", "взрослые", "универсальный"];
+const BRANDS = ["Все", "KidsPark", "WoodPlay", "ActiveKids"];
+const TYPES = ["Все", "горки", "качели", "домики", "комплексы"];
+const AGES = ["Все", "до 3 лет", "3–7 лет", "7–12 лет", "универсальный"];
 
 export default function Index() {
   const [section, setSection] = useState<Section>("home");
   const [filterBrand, setFilterBrand] = useState("Все");
   const [filterType, setFilterType] = useState("Все");
   const [filterAge, setFilterAge] = useState("Все");
-  const [priceMax, setPriceMax] = useState(10000);
+  const [priceMax, setPriceMax] = useState(40000);
   const [mobileMenuOpen, setMobileMenuOpen] = useState(false);
   const [cartCount, setCartCount] = useState(0);
 
@@ -121,7 +121,7 @@ export default function Index() {
             onClick={() => setSection("home")}
             className="font-display text-xl font-bold tracking-widest uppercase text-gradient"
           >
-            МедКаталог
+            ИграПарк
           </button>
 
           <div className="hidden md:flex items-center gap-8">
@@ -196,16 +196,16 @@ export default function Index() {
                     <div className="inline-flex items-center gap-2 px-3 py-1.5 rounded-full border border-[var(--cyan)]/30 bg-[var(--cyan-dim)] mb-6 section-enter stagger-1">
                       <span className="w-2 h-2 rounded-full bg-[var(--cyan)] animate-pulse" />
                       <span className="text-xs text-[var(--cyan)] font-medium tracking-widest uppercase">
-                        Медицинское оборудование
+                        Детское игровое оборудование
                       </span>
                     </div>
                     <h1 className="font-display text-5xl sm:text-6xl lg:text-7xl font-bold uppercase leading-none mb-6 section-enter stagger-2">
-                      <span className="text-foreground">Дышите</span>
+                      <span className="text-foreground">Играй</span>
                       <br />
-                      <span className="text-gradient">легко</span>
+                      <span className="text-gradient">с радостью</span>
                     </h1>
                     <p className="text-muted-foreground text-lg leading-relaxed mb-8 section-enter stagger-3">
-                      Каталог профессиональных ингаляторов и небулайзеров для детей и взрослых. Подберём оптимальный аппарат под ваши нужды.
+                      Горки, качели, домики и игровые комплексы для детей всех возрастов. Безопасное и яркое оборудование для дачи, сада и двора.
                     </p>
                     <div className="flex flex-wrap gap-3 section-enter stagger-4">
                       <button
@@ -225,8 +225,8 @@ export default function Index() {
                   <div className="relative section-enter stagger-3">
                     <div className="relative rounded-2xl overflow-hidden border border-border/50">
                       <img
-                        src="https://cdn.poehali.dev/projects/817a13ff-276b-40ef-b049-24bf274a3f4b/files/c5208ddc-07d8-431c-90e4-9f97fa69000a.jpg"
-                        alt="Небулайзер"
+                        src="https://cdn.poehali.dev/projects/817a13ff-276b-40ef-b049-24bf274a3f4b/files/abf38e83-0bd3-4b09-af5e-fec68bd9882a.jpg"
+                        alt="Детская горка"
                         className="w-full object-cover aspect-square"
                       />
                       <div className="absolute inset-0 bg-gradient-to-t from-background/60 via-transparent to-transparent" />
@@ -236,8 +236,8 @@ export default function Index() {
                       <div className="text-xs text-muted-foreground">моделей в наличии</div>
                     </div>
                     <div className="absolute -top-4 -right-4 bg-card border border-border rounded-xl p-4 backdrop-blur-sm">
-                      <div className="text-2xl font-display font-bold text-[var(--cyan)]">3</div>
-                      <div className="text-xs text-muted-foreground">типа аппаратов</div>
+                      <div className="text-2xl font-display font-bold text-[var(--cyan)]">4</div>
+                      <div className="text-xs text-muted-foreground">категории товаров</div>
                     </div>
                   </div>
                 </div>
@@ -250,13 +250,13 @@ export default function Index() {
                   Почему <span className="text-gradient">выбирают нас</span>
                 </h2>
                 <p className="text-muted-foreground text-center mb-12 max-w-xl mx-auto">
-                  Только сертифицированное оборудование от проверенных производителей
+                  Только сертифицированное оборудование с подтверждённой безопасностью для детей
                 </p>
                 <div className="grid sm:grid-cols-2 lg:grid-cols-4 gap-6">
                   {[
-                    { icon: "ShieldCheck", title: "Гарантия качества", desc: "Все аппараты имеют сертификаты соответствия" },
-                    { icon: "Truck", title: "Быстрая доставка", desc: "Доставим за 1–2 дня по всей России" },
-                    { icon: "Headphones", title: "Консультация врача", desc: "Поможем подобрать нужный аппарат" },
+                    { icon: "ShieldCheck", title: "Безопасность", desc: "Все товары соответствуют ГОСТ и имеют сертификаты" },
+                    { icon: "Truck", title: "Быстрая доставка", desc: "Доставим и соберём за 1–3 дня по всей России" },
+                    { icon: "Wrench", title: "Профи-монтаж", desc: "Установим и проверим устойчивость оборудования" },
                     { icon: "RefreshCcw", title: "Возврат 30 дней", desc: "Без вопросов вернём деньги при любых проблемах" },
                   ].map((f, i) => (
                     <div key={i} className="group p-6 rounded-2xl border border-border/50 bg-card card-hover">
@@ -299,7 +299,7 @@ export default function Index() {
           <div className="max-w-7xl mx-auto px-4 sm:px-6 py-10">
             <div className="mb-8">
               <h1 className="font-display text-4xl font-bold uppercase mb-2">
-                Каталог <span className="text-gradient">аппаратов</span>
+                Каталог <span className="text-gradient">оборудования</span>
               </h1>
               <p className="text-muted-foreground">Найдено {filteredProducts.length} моделей</p>
             </div>
@@ -363,7 +363,7 @@ export default function Index() {
                             : "border-border text-muted-foreground hover:border-[var(--cyan)]/40 hover:text-foreground"
                         }`}
                       >
-                        {a.charAt(0).toUpperCase() + a.slice(1)}
+                        {a}
                       </button>
                     ))}
                   </div>
@@ -375,28 +375,28 @@ export default function Index() {
                   </label>
                   <input
                     type="range"
-                    min={1000}
-                    max={10000}
-                    step={100}
+                    min={3000}
+                    max={40000}
+                    step={500}
                     value={priceMax}
                     onChange={(e) => setPriceMax(Number(e.target.value))}
                     className="w-full accent-[var(--cyan)] cursor-pointer"
                   />
                   <div className="flex justify-between text-xs text-muted-foreground mt-1">
-                    <span>1 000 ₽</span>
-                    <span>10 000 ₽</span>
+                    <span>3 000 ₽</span>
+                    <span>40 000 ₽</span>
                   </div>
                 </div>
               </div>
 
-              {(filterBrand !== "Все" || filterType !== "Все" || filterAge !== "Все" || priceMax !== 10000) && (
+              {(filterBrand !== "Все" || filterType !== "Все" || filterAge !== "Все" || priceMax !== 40000) && (
                 <div className="mt-4 pt-4 border-t border-border/50">
                   <button
                     onClick={() => {
                       setFilterBrand("Все");
                       setFilterType("Все");
                       setFilterAge("Все");
-                      setPriceMax(10000);
+                      setPriceMax(40000);
                     }}
                     className="text-xs text-muted-foreground hover:text-[var(--cyan)] transition-colors flex items-center gap-1"
                   >
@@ -564,7 +564,7 @@ export default function Index() {
                     <label className="text-xs text-muted-foreground uppercase tracking-wider block mb-2">Сообщение</label>
                     <textarea
                       rows={4}
-                      placeholder="Расскажите, какой аппарат вас интересует..."
+                      placeholder="Расскажите, какое оборудование вас интересует..."
                       className="w-full px-4 py-3 rounded-xl bg-secondary border border-border text-foreground placeholder:text-muted-foreground/50 focus:outline-none focus:border-[var(--cyan)]/60 focus:ring-1 focus:ring-[var(--cyan)]/30 transition-all text-sm resize-none"
                     />
                   </div>
@@ -580,7 +580,7 @@ export default function Index() {
 
       <footer className="mt-20 border-t border-border/50 py-8">
         <div className="max-w-7xl mx-auto px-4 sm:px-6 flex flex-col sm:flex-row items-center justify-between gap-4">
-          <div className="font-display text-lg font-bold tracking-widest uppercase text-gradient">МедКаталог</div>
+          <div className="font-display text-lg font-bold tracking-widest uppercase text-gradient">ИграПарк</div>
           <div className="flex gap-6">
             {navItems.map((item) => (
               <button
@@ -592,7 +592,7 @@ export default function Index() {
               </button>
             ))}
           </div>
-          <p className="text-xs text-muted-foreground">© 2026 МедКаталог. Все права защищены.</p>
+          <p className="text-xs text-muted-foreground">© 2026 ИграПарк. Все права защищены.</p>
         </div>
       </footer>
     </div>
@@ -609,9 +609,10 @@ function ProductCard({ product, onBuy }: { product: Product; onBuy: () => void }
   };
 
   const ageBadgeColor: Record<Product["age"], string> = {
-    дети: "text-orange-400 bg-orange-400/10 border-orange-400/20",
-    взрослые: "text-blue-400 bg-blue-400/10 border-blue-400/20",
-    универсальный: "text-purple-400 bg-purple-400/10 border-purple-400/20",
+    "до 3 лет": "text-pink-400 bg-pink-400/10 border-pink-400/20",
+    "3–7 лет": "text-orange-400 bg-orange-400/10 border-orange-400/20",
+    "7–12 лет": "text-blue-400 bg-blue-400/10 border-blue-400/20",
+    "универсальный": "text-purple-400 bg-purple-400/10 border-purple-400/20",
   };
 
   return (
@@ -629,7 +630,7 @@ function ProductCard({ product, onBuy }: { product: Product; onBuy: () => void }
           </div>
         )}
         <div className={`absolute top-3 right-3 px-2 py-1 rounded-full border text-xs font-medium ${ageBadgeColor[product.age]}`}>
-          {product.age.charAt(0).toUpperCase() + product.age.slice(1)}
+          {product.age}
         </div>
       </div>
 
